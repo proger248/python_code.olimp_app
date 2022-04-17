@@ -14,21 +14,36 @@ if not len(a) == n: quit()
 # ValueStr2 = a[0]
 
 k = 1
-while k < 100:
-    for i in range(2):
-        print("Cycle", i)
-        Value1 = int(a[i])
-        ValueStr1 = a[i]
-        while i < len(a):
-            i += 2
-            if i <= len(a) - 1:
-                Value1 += int(a[i])
-                ValueStr1 += a[i]
+# while k < 100:
+for i in range(2):
+    # print("Cycle", i)
+    Value1 = int(a[i])
+    ValueStr1 = a[i]
+    while i < len(a):
+        i += 2
+        if i <= len(a) - 1:
+            Value1 += int(a[i])
+            ValueStr1 += a[i]
 
-        res.append(Value1)
-        res_str.append(ValueStr1)
-    k += 1
-#
+    res.append(Value1)
+    res_str.append(ValueStr1)
+    # k += 1
+
+    # k = 1
+    # while k < 100:
+for i in range(2):
+    Value1 = int(a[i])
+    ValueStr1 = a[i]
+    while i < len(a):
+        i += 3
+        if i <= len(a) - 1:
+            Value1 += int(a[i])
+            ValueStr1 += a[i]
+
+    res.append(Value1)
+    res_str.append(ValueStr1)
+# k += 1
+
 #
 # i = 2
 # while i < len(a):
@@ -47,6 +62,7 @@ while k < 100:
 
 print(res_str)
 print(res)
+print(max(res))
 
 # print(ValueStr1)
 # print(Value1)
